@@ -32,14 +32,14 @@ export default function Navbar({ role }) {
           </li>
         ))}
       </ul>
-      <a href="/">
+      <Link href="/">
         <button
           onClick={() => signOut({ callbackUrl: "/login" })}
           className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded"
         >
           Cerrar Sesión
         </button>
-      </a>
+      </Link>
     </nav>
   );
 }
